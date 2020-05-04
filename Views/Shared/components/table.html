@@ -1,0 +1,186 @@
+<!-- MÔ TẢ -->
+<h1 class="bd-title" id="content">Table</h1>
+
+
+<!-- DEMO -->
+<div class="demo-section">
+    <h3 id="cpn_demo">Demo</h3>
+    <div class="demo_content">
+            <table class="table table-bordered table-hover table-striped dataTable stacktable">
+                <thead>
+                    <tr>
+                        <th class="wpx70 center">STT</th>
+                        <th class="wpx70 center">
+                            <label>
+                                <input class="group-checkable" type="checkbox">
+                                <span class="text"></span>
+                            </label>
+                        </th>
+                        <th class="wauto">Họ và tên</th>
+                        <th class="wpx300">Thông tin</th>
+                        <th class="wpx100">Tuổi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="center">1</td>
+                        <td class="center">
+                            <label>
+                                <input class="checkboxes" type="checkbox">
+                                <span class="text"></span>
+                            </label>
+                        </td>
+                        <td>Nguyễn Chí Tuân</td>
+                        <td>
+                            <div class="user-info">
+                                <img class="ua" width="30" src="stg/Assets/app/img/ava1.jpg">
+                                <span class="ui">
+                                    <span class="clearfix">Nguyễn Chí Tuân</span>
+                                    <span class="clearfix">tuannc@fsivietnam.com.vn</span>
+                                </span>
+                            </div>
+                        </td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td class="center">2</td>
+                        <td class="center">
+                            <label>
+                                <input class="checkboxes" type="checkbox">
+                                <span class="text"></span>
+                            </label>
+                        </td>
+                        <td>Nguyễn Văn A</td>
+                        <td>
+                            <div class="user-info">
+                                <img class="ua" width="30" src="stg/Assets/app/img/ava1.jpg">
+                                <span class="ui">
+                                    <span class="clearfix">Nguyễn Văn A</span>
+                                    <span class="clearfix">Anv@fsivietnam.com.vn</span>
+                                </span>
+                            </div>
+                        </td>
+                        <td>25</td>
+                    </tr>                    
+                </tbody>
+            </table>
+    </div>                
+</div>                
+
+<!-- HTML -->
+<div class="demo-section">
+    <h3 id="cpn_html">HTML</h3>
+    <div class="demo-wrapper">
+        <div class="demo_content">
+            <pre class="brush:xml;">
+                        &lt;table class=&quot;table table-bordered table-hover table-striped dataTable stacktable&quot;&gt;
+                            &lt;thead&gt;
+                                &lt;tr&gt;
+                                    &lt;th class=&quot;wpx70 center&quot;&gt;STT&lt;/th&gt;
+                                    &lt;th class=&quot;wpx70 center&quot;&gt;
+                                        &lt;label&gt;
+                                            &lt;input class=&quot;group-checkable&quot; type=&quot;checkbox&quot;&gt;
+                                            &lt;span class=&quot;text&quot;&gt;&lt;/span&gt;
+                                        &lt;/label&gt;
+                                    &lt;/th&gt;
+                                    &lt;th class=&quot;wauto&quot;&gt;Họ v&agrave; t&ecirc;n&lt;/th&gt;
+                                    &lt;th class=&quot;wpx300&quot;&gt;Th&ocirc;ng tin&lt;/th&gt;
+                                    &lt;th class=&quot;wpx100&quot;&gt;Tuổi&lt;/th&gt;
+                                &lt;/tr&gt;
+                            &lt;/thead&gt;
+                            &lt;tbody&gt;
+                                &lt;tr&gt;
+                                    &lt;td class=&quot;center&quot;&gt;1&lt;/td&gt;
+                                    &lt;td class=&quot;center&quot;&gt;
+                                        &lt;label&gt;
+                                            &lt;input class=&quot;checkboxes&quot; type=&quot;checkbox&quot;&gt;
+                                            &lt;span class=&quot;text&quot;&gt;&lt;/span&gt;
+                                        &lt;/label&gt;
+                                    &lt;/td&gt;
+                                    &lt;td&gt;Nguyễn Ch&iacute; Tu&acirc;n&lt;/td&gt;
+                                    &lt;td&gt;
+                                        &lt;div class=&quot;user-info&quot;&gt;
+                                            &lt;img class=&quot;ua&quot; width=&quot;30&quot; src=&quot;stg/Assets/app/img/ava1.jpg&quot;&gt;
+                                            &lt;span class=&quot;ui&quot;&gt;
+                                                &lt;span class=&quot;clearfix&quot;&gt;Nguyễn Ch&iacute; Tu&acirc;n&lt;/span&gt;
+                                                &lt;span class=&quot;clearfix&quot;&gt;tuannc@fsivietnam.com.vn&lt;/span&gt;
+                                            &lt;/span&gt;
+                                        &lt;/div&gt;
+                                    &lt;/td&gt;
+                                    &lt;td&gt;22&lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/tbody&gt;
+                        &lt;/table&gt;
+            </pre>
+        </div>                
+    </div>                
+</div>                
+
+<!-- CSS -->
+<div class="demo-section">
+    <h3 id="cpn_css">CSS</h3>
+    <div class="demo-wrapper">
+        <div class="demo_content">
+            <pre class="brush:css;">
+                /* User avater */
+                .job_search_widget td > .user-info {
+                    overflow: hidden;
+                    float: none;
+                    min-width: 90px;
+                }
+                .user-info .ua {
+                    width: 30px;
+                    height: 30px;
+                    display: inline-block;
+                    float: left;
+                    margin-top: 2px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    object-fit: cover;
+                    object-position: center center;
+                }
+                .user-info .ui {
+                    width: calc((100%) - 30px);
+                    display: inline-block;
+                    float: left;
+                    padding-left: 10px;
+                }
+            </pre>
+        </div>                
+    </div>                
+</div>                
+
+<!-- JS -->
+<div class="demo-section">
+    <h3 id="cpn_js">JS</h3>
+    <div class="demo-wrapper">
+        <div class="demo_content ">
+            <pre class="brush:js;">
+     
+            </pre>
+        </div>                
+    </div>                
+</div>                
+<!-- NOTE -->
+<div class="demo-section">
+    <h3 id="cpn_note">Note</h3>
+    <p class="hidden">Note des</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code class="highlighter-rouge">CSS</code></td>
+                <td>Chỉ thêm <code>CSS</code> khi copy <code>HTML</code> không giống demo</td>
+            </tr>
+            <tr>
+                <td><code class="highlighter-rouge">JS</code></td>
+                <td>Chỉ thêm <code>Js</code> khi copy <code>HTML,CSS</code> không chạy giống demo</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
