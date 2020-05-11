@@ -239,17 +239,25 @@
                     border-spacing: 0;
                     border-bottom: 1px solid #ddd;
                 }
+                .table-scroll th {
+                    background: rgb(217, 237, 247);
+                    color: rgb(49, 112, 143);
+                    border-color: #bcdff1 !important;
+                }
                 .f_top thead tr:first-child th {
                     position: -webkit-sticky;
                     position: sticky;
                     top: 0;
-                    z-index: 1;
+                    z-index: 99;
                 }
                 .table-scroll th, .table-scroll td {
                     padding: 5px 10px;
                     background: #fff;
                     white-space: nowrap;
                     vertical-align: middle;
+                    border-left: 1px solid #ddd;
+                    margin: -1px;
+                    border-top: 1px solid #ddd;
                 }
                 .table-scroll th {
                     background: rgb(217, 237, 247);
