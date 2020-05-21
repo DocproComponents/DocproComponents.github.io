@@ -162,10 +162,6 @@ jQuery(document).ready(function () {
     search_filter();
     $("#bd_docs_nav.useScrollBar").perfectScrollbar();
   });
-
-
-
-
 });
 //--DOCUMENT READY FUNCTION END
 

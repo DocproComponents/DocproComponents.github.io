@@ -645,7 +645,10 @@ $(document).ready(function () {
         jQuery(this).parents(".quickSearch").find(".dataFilter_Dropdown").toggleClass("open");
         jQuery(this).parents(".quickSearch").find(".dataFilter_Dropdown_target").toggleClass("open");
     });
-
+    //Popover
+    $('[data-toggle="popover"]').popover();
+    //Tooltip
+    $('[data-toggle="tooltip"]').tooltip();
 
     
 });
