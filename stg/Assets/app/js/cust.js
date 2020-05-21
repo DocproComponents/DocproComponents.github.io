@@ -563,8 +563,7 @@ $(document).ready(function () {
         jQuery(this).parents(".dropdown-hover").find(".dropdown-menu").slideToggle(300);
         jQuery(this).parents(".dropdown-hover").removeClass("inited");
     });
-
-    $('[data-toggle="tooltip"]').tooltip();
+    
 
     var dragTimer;
     $(window).on('dragenter', function(){
@@ -645,10 +644,14 @@ $(document).ready(function () {
         jQuery(this).parents(".quickSearch").find(".dataFilter_Dropdown").toggleClass("open");
         jQuery(this).parents(".quickSearch").find(".dataFilter_Dropdown_target").toggleClass("open");
     });
-    //Popover
-    $('[data-toggle="popover"]').popover();
+    // PopOver
+    if(jQuery(document).find('[data-toggle="popover"]').is(":visible")){
+        jQuery(document).find('[data-toggle="popover"]').popover();
+    }
     //Tooltip
-    $('[data-toggle="tooltip"]').tooltip();
+    if(jQuery(document).find('[data-toggle="tooltip"]').is(":visible")){
+        jQuery(document).find('[data-toggle="tooltip"]').tooltip();
+    }
 
     
 });
