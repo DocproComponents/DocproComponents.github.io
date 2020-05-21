@@ -644,14 +644,6 @@ $(document).ready(function () {
         jQuery(this).parents(".quickSearch").find(".dataFilter_Dropdown").toggleClass("open");
         jQuery(this).parents(".quickSearch").find(".dataFilter_Dropdown_target").toggleClass("open");
     });
-    // PopOver
-    if(jQuery(document).find('[data-toggle="popover"]').is(":visible")){
-        jQuery(document).find('[data-toggle="popover"]').popover();
-    }
-    //Tooltip
-    if(jQuery(document).find('[data-toggle="tooltip"]').is(":visible")){
-        jQuery(document).find('[data-toggle="tooltip"]').tooltip();
-    }
 
     
 });

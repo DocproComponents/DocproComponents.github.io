@@ -10,6 +10,7 @@
         <a href="#" data-toggle="tooltip" data-placement="bottom" title="tooltip bottom!">Tooltip bottom</a>
         <a href="#" data-toggle="tooltip" data-placement="left" title="tooltip left!">Tooltip left</a>
         <a href="#" data-toggle="tooltip" data-placement="right" title="tooltip right!">Tooltip right</a>
+        <button class="btn btn-warning tooltip-warning" data-toggle="tooltip" data-placement="top" data-original-title="Warning Tooltip">Warning</button>
     </div>                
 </div>                
 
@@ -74,8 +75,3 @@
         </tbody>
     </table>
 </div>
-<script type="text/javascript" charset="utf-8">
-    if(jQuery(document).find('[data-toggle="tooltip"]').is(":visible")){
-        jQuery(document).find('[data-toggle="tooltip"]').popover();
-    }
-</script>
