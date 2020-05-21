@@ -162,6 +162,14 @@ jQuery(document).ready(function () {
     search_filter();
     $("#bd_docs_nav.useScrollBar").perfectScrollbar();
   });
+  // PopOver
+    if(jQuery(document).find('[data-toggle="popover"]').is(":visible")){
+        jQuery(document).find('[data-toggle="popover"]').popover();
+    }
+    //Tooltip
+    if(jQuery(document).find('[data-toggle="tooltip"]').is(":visible")){
+        jQuery(document).find('[data-toggle="tooltip"]').tooltip();
+    }
 });
 //--DOCUMENT READY FUNCTION END
 
